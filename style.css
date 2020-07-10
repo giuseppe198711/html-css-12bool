@@ -1,3 +1,32 @@
-body {
-  background-color: red;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container, [class*="col-"] {
+  border: 1px solid red;
+
+}
+
+[class*="col-"] {
+  height: 100%;
+  background-color: pink;
+  position: relative;
+  text-align: center;
+  vertical-align: center
+}
+
+
+[class*="col-"] > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%);
+
+}
+
+.row {
+  height: 300px;
+
 }
