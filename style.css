@@ -6,12 +6,14 @@
 
 .container, [class*="col-"] {
   border: 1px solid red;
+  background-color: pink;
+
 
 }
 
 [class*="col-"] {
   height: 100%;
-  background-color: pink;
+  border:1px solid black;
   position: relative;
 
 }
@@ -25,7 +27,16 @@
 
 }
 
+.nested{
+  padding: 5px;
+}
+
+.nested > div {
+background-color: lightcoral;
+border: 1px solid #fff;
+}
+
+
 .row {
   height: 300px;
-
 }
